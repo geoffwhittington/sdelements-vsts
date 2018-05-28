@@ -8,4 +8,4 @@ install:
 - npm i -g tfx-cli;
 
 script:
-- npm extension create
+- tfx extension create
