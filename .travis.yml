@@ -7,4 +7,4 @@ install:
 - npm i -g tfx-cli;
 
 script:
-- npm extension publish
+- npm extension create

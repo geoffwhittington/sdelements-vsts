@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "sdelements",
-    "version": "0.1.17",
+    "version": "0.1.18",
     "name": "SD Elements Integration",
     "publisher": "GeoffW",
     "description": "Security Compass SD Elements Platform Integration",
@@ -62,7 +62,7 @@
                   "endpointUrl": "{{{endpoint.url}}}api/v2/users/me/",
                   "resultSelector": "jsonpath:$.values[*]"
                 }
-      
+
               ],
               "authenticationSchemes": [
                 {
@@ -90,6 +90,6 @@
               ],
               "helpMarkDown": "This is help"
             }
-          }        
+          }
     ]
 }
