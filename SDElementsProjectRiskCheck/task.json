@@ -1,0 +1,44 @@
+{
+  "id": "0bbafd10-57ae-11e8-a4ea-03367734a9fe",
+  "name": "SDElementsProjectRiskCheck",
+  "friendlyName": "SD Elements Risk Policy Check",
+  "description": "Breaks a build when the SD Elements project does not comply with its risk policy",
+  "author": "Security Compass",
+  "helpMarkDown": "Replace with markdown to show in help",
+  "category": "Build",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "demands": [],
+  "version": {
+    "Major": "0",
+    "Minor": "1",
+    "Patch": "28"
+  },
+  "minimumAgentVersion": "1.95.0",
+  "instanceNameFormat": "SD Elements Risk Policy Check $(projectid)",
+  "inputs": [
+    {
+      "name": "connection",
+      "type": "connectedService:SDElements",
+      "label": "SD Elements service/server end point",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "Select the SD Elements end point to use. If needed, click on 'manage', and add a new Service Endpoint of type 'SD Elements server connection'"
+    },
+    {
+      "name": "projectid",
+      "type": "string",
+      "label": "Project ID",
+      "required": true,
+      "helpMarkDown": "SD Elements project ID"
+    }
+  ],
+  "execution": {
+    "Node": {
+      "target": "risk-check.js",
+      "argumentFormat": ""
+    }
+  }
+}
