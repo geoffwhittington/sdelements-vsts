@@ -17,9 +17,9 @@ request.get({
     var project = JSON.parse(res.body);
     if (project['risk_policy_compliant'])
     {
-        tl.setResult(tl.TaskResult.Succeeded, 'Project risk status is compliant');
+        tl.setResult(tl.TaskResult.Succeeded, 'Project risk status is compliant. URL: '+ project['url']);
     }
     else {
-        tl.setResult(tl.TaskResult.Failed, 'Project risk status is NOT compliant');
+        tl.setResult(tl.TaskResult.Failed, 'Project risk status is NOT compliant. URL: '+ project['url']);
     }
 });
