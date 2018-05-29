@@ -4,7 +4,7 @@
   "friendlyName": "SD Elements Risk Policy Check",
   "description": "Breaks a build when the SD Elements project does not comply with its risk policy",
   "author": "Security Compass",
-  "helpMarkDown": "Replace with markdown to show in help",
+  "helpMarkDown": "Your organization has defined a minimum set of tasks from SD Elements which must be complete in order for this project to build. If you believe you are receiving this message in error or would like more information, please contact your company's application security team.",
   "category": "Build",
   "visibility": [
     "Build",
@@ -22,17 +22,17 @@
     {
       "name": "connection",
       "type": "connectedService:SDElements",
-      "label": "SD Elements service/server end point",
+      "label": "SD Elements Service/Server Endpoint",
       "defaultValue": "",
       "required": true,
-      "helpMarkDown": "Select the SD Elements end point to use. If needed, click on 'manage', and add a new Service Endpoint of type 'SD Elements server connection'"
+      "helpMarkDown": "Select the SD Elements endpoint to use. If needed, click on 'manage', and add a new Service Endpoint of type 'SD Elements server connection'. Note that your SD Elements instance must be reachable via HTTPS (TCP 443) from wherever VSTS/TFS is hosted."
     },
     {
       "name": "projectid",
       "type": "string",
       "label": "Project ID",
       "required": true,
-      "helpMarkDown": "SD Elements project ID"
+      "helpMarkDown": "SD Elements Project ID"
     }
   ],
   "execution": {
