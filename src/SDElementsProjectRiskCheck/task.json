@@ -4,7 +4,7 @@
   "friendlyName": "SD Elements Risk Policy Check",
   "description": "Breaks a build when the SD Elements project does not comply with its risk policy",
   "author": "Security Compass",
-  "helpMarkDown": "Your organization has defined a minimum set of tasks from SD Elements which must be complete in order for this project to build. If you believe you are receiving this message in error or would like more information, please contact your company's application security team.",
+  "helpMarkDown": "Your organization has defined a minimum set of tasks from SD Elements which must be complete in order for this test to pass. If you believe you are receiving this message in error or would like more information, please contact your company's application security team.",
   "category": "Build",
   "visibility": [
     "Build",
