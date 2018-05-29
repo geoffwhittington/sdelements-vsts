@@ -54,7 +54,7 @@
               "displayName": "SD Elements",
               "url": {
                 "displayName": "Server Url",
-                "helpText": "Url for the SD Elements server to connect to."
+                "helpText": "URL for the SD Elements server to connect to."
               },
               "dataSources": [
                 {
